@@ -162,12 +162,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenEmergency }) =
                   White Papers & Glossary
                 </button>
               </li>
-              <li>
-                <button onClick={() => onNavigate('prompt-architect')} className="text-cyan-400 hover:text-cyan-300 font-mono transition flex items-center gap-1">
-                  <Sparkles className="w-3 h-3" />
-                  AI Prompt Studio
-                </button>
-              </li>
             </ul>
           </div>
 
