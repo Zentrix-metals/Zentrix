@@ -68,14 +68,6 @@ export const Navbar: React.FC<NavbarProps> = ({
             <ShieldAlert className="w-3.5 h-3.5 animate-pulse" />
             <span>24/7 Red Line: +41 22 819 9999</span>
           </button>
-          
-          <button
-            onClick={() => onNavigate('prompt-architect')}
-            className="flex items-center gap-1 px-2 py-0.5 bg-cyan-950/70 border border-cyan-500/40 text-cyan-300 hover:bg-cyan-900/80 rounded transition"
-          >
-            <Code2 className="w-3 h-3 text-cyan-400" />
-            <span>AI Prompt Studio</span>
-          </button>
         </div>
       </div>
 
