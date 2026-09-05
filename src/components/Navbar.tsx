@@ -86,7 +86,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="flex flex-col">
             <div className="flex items-center gap-1.5">
               <span className="font-extrabold tracking-tight text-white text-lg font-sans">
-                RADIA<span className="text-cyan-400">CORE</span>
+                Zentrix<span className="text-cyan-400">METALS</span>
               </span>
               <span className="px-1.5 py-0.2 bg-slate-800 text-[10px] font-mono text-cyan-300 rounded border border-slate-700">
                 DYNAMIC
