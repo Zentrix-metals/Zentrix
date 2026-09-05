@@ -105,14 +105,6 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   <span>Project Scope Assessment</span>
                 </button>
 
-                <button
-                  onClick={() => onNavigate('prompt-architect')}
-                  className="px-4 py-3.5 bg-cyan-950/40 hover:bg-cyan-900/60 text-cyan-300 border border-cyan-500/40 text-xs font-mono rounded-xl transition flex items-center gap-1.5"
-                  title="View complete AI generation prompt"
-                >
-                  <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
-                  <span>AI Prompt Studio</span>
-                </button>
               </div>
 
               {/* Key Trust badges row */}
