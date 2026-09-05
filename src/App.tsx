@@ -19,7 +19,6 @@ import { InsightsView } from './views/InsightsView';
 import { TeamView } from './views/TeamView';
 import { ResourcesView } from './views/ResourcesView';
 import { ContactView } from './views/ContactView';
-import { PromptArchitectView } from './views/PromptArchitectView';
 
 export default function App() {
   const [currentTab, setCurrentTab] = useState<NavigationTab>('home');
