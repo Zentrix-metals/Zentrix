@@ -1,20 +1,11 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
 
-# Run and deploy your AI Studio app
+# ⚡ Zentrix
 
-This contains everything you need to run your app locally.
+A sleek, modern web platform designed to deliver high-performance user experiences. **Zentrix** combines minimalist aesthetics with powerful functionality to provide a seamless interface for modern users.
 
-View your app in AI Studio: https://ai.studio/apps/50b73eb6-3033-45a4-9099-7e4e5e07df1d
+## 🚀 Features
 
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+* **Responsive Design:** Completely optimized for mobile, tablet, and desktop viewports.
+* **Modern UI/UX:** Built with high-fidelity components, fluid animations, and dark mode support.
+* **Optimized Performance:** Fast load times, lazy-loaded assets, and clean code architecture.
+* **Scalable Architecture:** Easily extendable codebase designed for future feature rollouts.
