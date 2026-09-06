@@ -1,6 +1,5 @@
 {
-  "name": "RadiaCore Technologies - Nuclear & GeoSciences Corporate Suite",
+  "name": "Zentrix radiation Metals - Nuclear & GeoSciences Corporate Suite",
   "description": "Enterprise corporate portal and technical platform for Radiation Safety, Environmental Remediation, Lab Analytics, Geological Studies, and Bulk Metals Supply Chain.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "requestFramePermissions": []
 }
