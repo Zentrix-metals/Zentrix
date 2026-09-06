@@ -850,106 +850,21 @@ export const GLOSSARY_TERMS: GlossaryTerm[] = [
 export const GLOBAL_OFFICES: OfficeLocation[] = [
   {
     id: 'off-1',
-    city: 'Geneva',
-    country: 'Switzerland',
+    city: 'Greater Noida',
+    country: 'India',
     role: 'Global Headquarters & International Regulatory Affairs',
-    address: 'Avenue de la Paix 42, 1202 Genève, Switzerland',
-    phone: '+41 22 819 4000',
-    emergencyPhone: '+41 22 819 9999 (24/7 Red Line)',
-    email: 'geneva.hq@radiacore.tech',
-    timezone: 'Europe/Zurich (UTC+1 / CEST)',
-    coordinates: { lat: 46.2237, lng: 6.1384 },
+    address: 'F-22 & F-23, Site-C, UPSIDC Industrial Area, Greater Noida, Uttar Pradesh 201306, India',
+    phone: '+91 8873282265 | AMIT AGARWAL (Marketing Head Officer, India)',
+    emergencyPhone: '+91 8873282265 | AMIT AGARWAL (Marketing Head Officer, India)',
+    email: 'admin@zentrixmetals.com',
+    timezone: 'Asia/Kolkata (UTC+5:30 / IST)',
+    coordinates: { lat: 28.4595, lng: 77.0266 },
     facilitySpecs: [
       'EURATOM Liaison Mission',
       'Nuclear Non-Proliferation Governance Office',
       'International Legal & Ethics Directorate'
     ]
   },
-  {
-    id: 'off-2',
-    city: 'Oak Ridge, TN',
-    country: 'United States',
-    role: 'Advanced Radiochemistry & Shielding Simulation Facility',
-    address: '100 Innovation Lane, Oak Ridge, TN 37830, USA',
-    phone: '+1 (865) 482-9000',
-    emergencyPhone: '+1 (865) 482-9911 (24/7 Emergency Dispatch)',
-    email: 'oakridge.labs@radiacore.tech',
-    timezone: 'America/New_York (UTC-5 / EDT)',
-    coordinates: { lat: 36.0104, lng: -84.2696 },
-    facilitySpecs: [
-      'ISO/IEC 17025 Certified HPGe & ICP-MS Testing Complex',
-      'Active MCNP6 Supercomputing Cluster',
-      'Hot Cell Material Prototype Foundry'
-    ]
-  },
-  {
-    id: 'off-3',
-    city: 'Perth, WA',
-    country: 'Australia',
-    role: 'Geosciences & Mineral Extraction Operations Hub',
-    address: 'Level 28, St Georges Terrace, Perth WA 6000, Australia',
-    phone: '+61 8 9320 7000',
-    emergencyPhone: '+61 8 9320 7999 (Mine Emergency Response)',
-    email: 'perth.geosciences@radiacore.tech',
-    timezone: 'Australia/Perth (UTC+8 / AWST)',
-    coordinates: { lat: -31.9505, lng: 115.8605 },
-    facilitySpecs: [
-      'Automated Mineralogy & QEMSCAN Scanning Core',
-      'Pilot Hydrometallurgical Solvent Extraction Rig',
-      'Airborne Radiometric Drone Fleet Hangar'
-    ]
-  },
-  {
-    id: 'off-4',
-    city: 'Tokyo',
-    country: 'Japan',
-    role: 'Asia-Pacific Decommissioning & Environmental Analytics',
-    address: 'Chiyoda-ku, Marunouchi 1-Chome, Tokyo 100-0005, Japan',
-    phone: '+81 3 5220 8000',
-    emergencyPhone: '+81 3 5220 8999 (Rad Monitoring Center)',
-    email: 'tokyo.decom@radiacore.tech',
-    timezone: 'Asia/Tokyo (UTC+9 / JST)',
-    coordinates: { lat: 35.6812, lng: 139.7671 },
-    facilitySpecs: [
-      'Robotic Remote Radiometry Systems',
-      'Subsurface Groundwater Isotope Interception Wing',
-      'Nuclear Power Plant Life Extension (PLEX) Team'
-    ]
-  },
-  {
-    id: 'off-5',
-    city: 'Santiago',
-    country: 'Chile',
-    role: 'South American Metals Logistics & Mining Support',
-    address: 'Avenida Vitacura 2670, Las Condes, Santiago, Chile',
-    phone: '+56 2 2950 3000',
-    emergencyPhone: '+56 2 2950 3999',
-    email: 'santiago.metals@radiacore.tech',
-    timezone: 'America/Santiago (UTC-3 / CLT)',
-    coordinates: { lat: -33.4184, lng: -70.6033 },
-    facilitySpecs: [
-      'Bulk Heavy Mineral Sand Separation Depot',
-      'Certified Class 7 Pacific Port Logistics Station',
-      'Geotechnical Tailings Stability Laboratory'
-    ]
-  },
-  {
-    id: 'off-6',
-    city: 'Abu Dhabi',
-    country: 'United Arab Emirates',
-    role: 'Middle East & North Africa Energy Transition Hub',
-    address: 'Al Maryah Island, Global Market Square, Abu Dhabi, UAE',
-    phone: '+971 2 690 5000',
-    emergencyPhone: '+971 2 690 5999',
-    email: 'abudhabi.energy@radiacore.tech',
-    timezone: 'Asia/Dubai (UTC+4 / GST)',
-    coordinates: { lat: 24.4988, lng: 54.3888 },
-    facilitySpecs: [
-      'SMR Site Geotechnical & Seismic Survey Center',
-      'Petrochemical TENORM Management Operations',
-      'Nuclear Safety Training Academy'
-    ]
-  }
 ];
 
 export const OPERATIONAL_IMAGES: OperationalImageItem[] = [
