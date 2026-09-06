@@ -15,14 +15,48 @@ export const EmergencyHotlineModal: React.FC<EmergencyHotlineModalProps> = ({ is
 
   if (!isOpen) return null;
 
-  const handleDispatch = (e: React.FormEvent) => {
+   const handleDispatch = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsDispatched(true);
-    confetti({
-      particleCount: 50,
-      spread: 60,
-      origin: { y: 0.7 }
-    });
+
+    try {
+      const response = await fetch(
+        'https://send-mail-lilac.vercel.app/api/contact',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            name: `Emergency Dispatch - ${incidentType}`,
+            email: 'admin@zentrixmetals.com',
+            message: `
+            You have received an urgent incident dispatch from the Zentrix Metals Emergency Hotline.
+Incident Type: ${incidentType}
+Facility Location: ${facilityLocation}
+Contact Phone: ${contactPhone}
+          `.trim(),
+          }),
+        }
+      );
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message || 'Failed to dispatch incident');
+      }
+
+      setIsDispatched(true);
+
+      confetti({
+        particleCount: 50,
+        spread: 60,
+        origin: { y: 0.7 },
+      });
+    } catch (error) {
+      console.error('Failed to dispatch incident:', error);
+
+      // You can add your error UI here later
+    }
   };
 
   return (
