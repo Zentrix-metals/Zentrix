@@ -91,7 +91,7 @@ export const EmergencyHotlineModal: React.FC<EmergencyHotlineModalProps> = ({ is
               <div className="p-3.5 bg-red-950/40 border border-red-500/30 rounded-xl flex items-center justify-between">
                 <div>
                   <div className="text-xs font-mono text-red-300">DIRECT INSTANT SATELLITE DISPATCH:</div>
-                  <div className="text-lg font-mono font-bold text-white mt-0.5">+41 22 819 9999 / +1 865 482 9911</div>
+                  <div className="text-lg font-mono font-bold text-white mt-0.5">+91 8873282265 | AMIT AGARWAL</div>
                 </div>
                 <a
                   href="tel:+18654829911"
