@@ -100,7 +100,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenEmergency }) =
                 </span>
               </div>
               <p className="text-xs text-white font-mono font-bold">
-                +41 22 819 9999 / +1 865 482 9911
+                +91 8873282265 | AMIT AGARWAL
               </p>
               <button
                 onClick={onOpenEmergency}
