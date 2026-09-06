@@ -72,7 +72,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       </div>
 
       {/* Main Navbar */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
         {/* Brand Logo */}
         <div 
           onClick={() => onNavigate('home')}
@@ -85,12 +85,12 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
           <div className="flex flex-col">
             <div className="flex items-center gap-1.5">
-              <span className="font-extrabold tracking-tight text-white text-lg font-sans">
-                Zentrix<span className="text-cyan-400">METALS</span>
-              </span>
-              <span className="px-1.5 py-0.2 bg-slate-800 text-[10px] font-mono text-cyan-300 rounded border border-slate-700">
+              <span className="font-extrabold tracking-tight text-white text-2xl sm:text-[36px] font-sans whitespace-nowrap">
+  Zentrix<span className="text-cyan-400">METALS</span>
+</span>
+              {/* <span className="px-1.5 py-0.2 bg-slate-800 text-[10px] font-mono text-cyan-300 rounded border border-slate-700">
                 DYNAMIC
-              </span>
+              </span> */}
             </div>
             <span className="text-[10px] font-mono text-slate-400 tracking-wider uppercase -mt-0.5">
               Nuclear & Geosciences
@@ -99,7 +99,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         </div>
 
         {/* Desktop Nav Links */}
-        <nav className="hidden xl:flex items-center space-x-1">
+        <nav className="hidden items-center space-x-1">
           {navItems.map((item) => {
             const isActive = currentTab === item.id;
             
@@ -190,7 +190,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             className="flex items-center gap-2 px-3 py-1.5 bg-slate-900 hover:bg-slate-800 border border-slate-800 rounded-lg text-slate-400 text-xs font-mono transition"
             title="Search database (Cmd+K)"
           >
-            <Search className="w-3.5 h-3.5 text-cyan-400" />
+            <Search className="w-3.5 h-6 sm:h-full text-cyan-400" />
             <span className="hidden sm:inline">Search Index</span>
             <kbd className="hidden lg:inline px-1.5 py-0.5 text-[9px] bg-slate-950 rounded text-slate-400 border border-slate-800">⌘K</kbd>
           </button>
@@ -206,7 +206,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Mobile Menu Toggle */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="xl:hidden p-2 text-slate-400 hover:text-white bg-slate-900 rounded-lg border border-slate-800"
+            className="p-2 text-slate-400 hover:text-white bg-slate-900 rounded-lg border border-slate-800"
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
@@ -215,7 +215,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="xl:hidden bg-slate-950 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+        <div className="bg-slate-950 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
           <div className="grid grid-cols-2 gap-2">
             {navItems.map((item) => (
               <button
