@@ -253,8 +253,8 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {activeService.keyCapabilities.slice(0, 4).map((cap, i) => (
                     <div key={i} className="bg-slate-950/60 border border-slate-800 rounded-xl p-3">
-                      <div className="text-xs font-bold text-slate-200 mb-1">{cap.title}</div>
-                      <div className="text-[11px] text-slate-400 line-clamp-2">{cap.description}</div>
+                      <div className="text-[16px] font-bold text-slate-200 mb-1">{cap.title}</div>
+                      <div className="text-[14px] text-slate-400 line-clamp-2">{cap.description}</div>
                       {cap.metrics && (
                         <div className="mt-2 text-[10px] font-mono text-cyan-400 font-semibold">
                           {cap.metrics}
@@ -286,40 +286,40 @@ export const HomeView: React.FC<HomeViewProps> = ({
 
             {/* Right details box */}
             <div className="lg:col-span-5 bg-slate-950 border border-slate-800 rounded-xl p-5 sm:p-6 flex flex-col justify-between space-y-6">
-              <div>
-                <h4 className="text-xs font-mono uppercase tracking-wider text-cyan-400 font-bold mb-3">
-                  Instrumentation & Analytical Hardware:
-                </h4>
-                <ul className="space-y-2 text-xs font-mono text-slate-300">
-                  {activeService.instrumentation.map((inst, i) => (
-                    <li key={i} className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 shrink-0" />
-                      <span>{inst}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+  <div>
+    <h4 className="text-sm md:text-base font-mono uppercase tracking-wider text-cyan-400 font-bold mb-3">
+      Instrumentation & Analytical Hardware:
+    </h4>
+    <ul className="space-y-2.5 text-sm md:text-base font-mono text-slate-300">
+      {activeService.instrumentation.map((inst, i) => (
+        <li key={i} className="flex items-center gap-2.5">
+          <span className="w-2 h-2 rounded-full bg-cyan-400 shrink-0" />
+          <span>{inst}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
 
-              <div>
-                <h4 className="text-xs font-mono uppercase tracking-wider text-slate-400 font-bold mb-2">
-                  Compliance Mandates:
-                </h4>
-                <div className="flex flex-wrap gap-1.5">
-                  {activeService.complianceStandards.map((std, i) => (
-                    <span key={i} className="text-[10px] font-mono px-2 py-0.5 bg-slate-900 border border-slate-800 rounded text-slate-300">
-                      {std}
-                    </span>
-                  ))}
-                </div>
-              </div>
+  <div>
+    <h4 className="text-sm md:text-base font-mono uppercase tracking-wider text-slate-400 font-bold mb-2.5">
+      Compliance Mandates:
+    </h4>
+    <div className="flex flex-wrap gap-2">
+      {activeService.complianceStandards.map((std, i) => (
+        <span key={i} className="text-xs md:text-sm font-mono px-2.5 py-1 bg-slate-900 border border-slate-800 rounded text-slate-300">
+          {std}
+        </span>
+      ))}
+    </div>
+  </div>
 
-              {/* Case Study preview */}
-              <div className="p-3.5 bg-cyan-950/20 border border-cyan-500/20 rounded-lg space-y-1.5">
-                <span className="text-[10px] font-mono uppercase text-cyan-400 font-bold">CASE HIGHLIGHT</span>
-                <p className="text-xs font-bold text-white">{activeService.caseStudy.title}</p>
-                <p className="text-[11px] text-slate-300 leading-snug">{activeService.caseStudy.outcome}</p>
-              </div>
-            </div>
+  {/* Case Study preview */}
+  <div className="p-4 bg-cyan-950/20 border border-cyan-500/20 rounded-lg space-y-2">
+    <span className="text-xs font-mono uppercase text-cyan-400 font-bold">CASE HIGHLIGHT</span>
+    <p className="text-sm md:text-base font-bold text-white">{activeService.caseStudy.title}</p>
+    <p className="text-xs md:text-sm text-slate-300 leading-relaxed">{activeService.caseStudy.outcome}</p>
+  </div>
+</div>
           </div>
         </div>
       </section>
