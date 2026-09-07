@@ -57,15 +57,80 @@ export const ContactView: React.FC<ContactViewProps> = ({
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+ const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    const response = await fetch(
+      'https://send-mail-lilac.vercel.app/api/contact',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name.trim(),
+          email: formData.email.trim(),
+          message: `
+NEW ZENTRIX METALS INQUIRY
+
+Company: ${formData.company}
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+
+--- PROJECT DETAILS ---
+
+Solution Stream:
+${formData.stream}
+
+Urgency:
+${formData.urgency}
+
+Site Type:
+${formData.siteType}
+
+Sample Volume:
+${formData.sampleVolume}
+
+Location:
+${formData.location}
+
+Compliance Requirements:
+${formData.complianceNeed.join(', ')}
+
+Project Timeline:
+${formData.timeline}
+
+NDA Required:
+${formData.ndaRequired ? 'Yes' : 'No'}
+
+Additional Details:
+${formData.details || 'No additional details provided.'}
+          `.trim(),
+        }),
+      }
+    );
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data.message || 'Failed to submit inquiry');
+    }
+
     setIsSubmitted(true);
+
     confetti({
       particleCount: 75,
       spread: 70,
-      origin: { y: 0.6 }
+      origin: { y: 0.6 },
     });
-  };
+  } catch (error) {
+    console.error('Failed to submit inquiry:', error);
+
+    // You can add error UI here later
+  }
+};
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16 space-y-16">
